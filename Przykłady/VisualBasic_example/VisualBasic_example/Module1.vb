@@ -1,4 +1,6 @@
 ﻿Imports System.Math
+Imports VisualBasic_example.TabliceEtc
+
 Module Module1
 
     Sub Main() 'Brak komentarzy blokowych. Tylko linijkowe.
@@ -10,7 +12,7 @@ Module Module1
             Case 1
                 Console.WriteLine("First.")
 
-                Dim variable As String 'Definicja zmiennych z Dim na początku
+                Dim variable As String 'Deklaracja zmiennych z Dim na początku
                 Dim x, y As Integer
                 x = 32
                 y = 10
@@ -106,6 +108,8 @@ Module Module1
                 
 
             Case Else
+                Dim obiekt_struktury As TabliceEtc = New TabliceEtc()
+                obiekt_struktury.void()
         End Select
 
 
