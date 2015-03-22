@@ -1,0 +1,9 @@
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\bin\Debug\VisualBasic_example.exe.config
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\bin\Debug\VisualBasic_example.exe
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\bin\Debug\VisualBasic_example.pdb
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\bin\Debug\VisualBasic_example.xml
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\obj\Debug\VisualBasic_example.Resources.resources
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\obj\Debug\VisualBasic_example.vbproj.GenerateResource.Cache
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\obj\Debug\VisualBasic_example.exe
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\obj\Debug\VisualBasic_example.xml
+c:\users\shaker\documents\visual studio 2013\Projects\VisualBasic_example\VisualBasic_example\obj\Debug\VisualBasic_example.pdb
