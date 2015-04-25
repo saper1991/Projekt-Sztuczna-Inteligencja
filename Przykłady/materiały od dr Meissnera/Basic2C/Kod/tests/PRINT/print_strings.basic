@@ -1,0 +1,6 @@
+10 PRINT "test"
+20 PRINT ""
+25 DIM A$(5) : DIM B$(6)
+30 A$="first" : B$="second"
+40 A$(LEN(A$+1))=B$
+50 PRINT A$

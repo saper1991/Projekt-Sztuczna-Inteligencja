@@ -1,0 +1,4 @@
+1 PRINT CHR$(65)
+2 DIM X$(1)
+3 X$ = CHR$(67)
+4 PRINT X$

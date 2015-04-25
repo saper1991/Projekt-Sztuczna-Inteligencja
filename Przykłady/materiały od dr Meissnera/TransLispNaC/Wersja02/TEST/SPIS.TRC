@@ -1,0 +1,7 @@
+Spis zawartosci:
+append.lsp - klasyczna funkcja append
+extract.lsp - funkcja "splaszczajaca" liste zagniezdzona
+reverse.lsp - funkcja odwracajaca kolejnosc elementow na liscie
+par.lsp - funkcja okreslajaca parzystosc liczby elementow listy	
+
+main.c - przykladowy program testujacy funkcje extract

@@ -1,0 +1,1 @@
+c:\users\damian\documents\visual studio 2012\Projects\Przetwornik DCG C do asm\Przetwornik DCG C do asm\bin\Debug\Przetwornik DCG C do asm.exe.config

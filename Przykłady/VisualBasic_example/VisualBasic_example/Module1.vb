@@ -105,7 +105,7 @@ Module Module1
                     Console.WriteLine(myNumber)
                 Loop While myNumber < 10
 
-                
+
 
             Case Else
                 Dim obiekt_struktury As TabliceEtc = New TabliceEtc()

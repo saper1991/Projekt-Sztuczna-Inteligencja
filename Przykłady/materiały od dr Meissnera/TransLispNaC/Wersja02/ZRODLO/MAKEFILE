@@ -1,0 +1,11 @@
+all: glex.cpp glex.h gparse.cpp gparse.cpp lisp_std.c lisp_std.h
+	bcc -el2c.exe gparse.cpp glex.cpp lisp_std.c
+
+gram: glex.cpp gparse.cpp
+	@echo Grammar compiled
+
+glex.cpp: glex.l
+	lex -LC -o glex.cpp -D glex.h glex.l
+
+gparse.cpp: gparse.y
+	yacc -LC -o gparse.cpp -D gparse.h gparse.y

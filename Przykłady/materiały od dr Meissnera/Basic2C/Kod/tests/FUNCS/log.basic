@@ -1,0 +1,3 @@
+10 X = LOG(5  )
+11 Y = LOG( 5       )
+12 PRINT LOG( 5       )

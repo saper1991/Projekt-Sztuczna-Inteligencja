@@ -1,0 +1,52 @@
+global _main
+extern _printf
+
+SECTION .data
+x: dd 3
+a: dd 3
+c: dd 3
+b: dd 3
+s: dd 3
+
+msg1 db "Wynik %d", 10,0
+
+SECTION .text
+
+_main:
+push    ebp
+mov     ebp,esp
+
+mov eax, [a]
+add eax, [b]
+mov [x], eax
+push [x]
+
+
+mov eax, [b]
+sub eax, [a]
+mov [x], eax
+push [x]
+push dword msg1
+call _printf
+
+mov eax, [c]
+mov edx,0
+idiv dword [a]
+mov [x], eax
+push [x]
+push dword msg1
+call _printf
+
+mov eax, [x]
+mov eax, [s]
+push [x]
+push dword msg1
+call _printf
+
+mov esp, ebp
+pop ebp
+
+mov eax, 0
+
+int 0x80
+ret

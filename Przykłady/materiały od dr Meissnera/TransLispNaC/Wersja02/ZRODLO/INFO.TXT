@@ -1,0 +1,2 @@
+Uwaga o kompilacji:
+makefile jest przygotowany dla kompilatora Borland C++ 3.1

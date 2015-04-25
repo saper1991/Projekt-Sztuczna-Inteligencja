@@ -1,0 +1,4 @@
+1 X = ABS(-5)
+2 Y = ABS  ( 20 )
+3 PRINT Y
+4 PRINT ABS( -9)

@@ -1,0 +1,3 @@
+40 X =   SIN(30   )
+50 Y = SIN  (   30 )
+70 PRINT SIN  (   30 )

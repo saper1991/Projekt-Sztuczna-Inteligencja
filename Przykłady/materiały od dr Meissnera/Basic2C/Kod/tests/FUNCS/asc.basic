@@ -1,0 +1,4 @@
+1 DIM A$(3)
+2 A$ = "E"
+3 A = ASC(A$)
+4 PRINT A

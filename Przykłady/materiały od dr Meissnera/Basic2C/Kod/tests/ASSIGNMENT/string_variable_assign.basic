@@ -1,0 +1,5 @@
+10 dim A$(20)
+11 A$ = "Test" 
+12 dim B$(2)
+20 B$ = A$
+22 print B$

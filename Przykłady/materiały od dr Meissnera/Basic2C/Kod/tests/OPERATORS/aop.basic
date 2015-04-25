@@ -1,0 +1,9 @@
+00 DIM tab1(2^2)
+10 DIM tab2(2+2)
+20 DIM tab3(2-2)
+30 DIM tab4(2/2)
+40 DIM tab5(2*2)
+50 A = -5
+60 PRINT -A
+#70 b$="Radek trololo"
+#80 PRINT -LEN(b$)

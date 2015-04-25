@@ -1,0 +1,3 @@
+40 X = COS(     30)
+60 Y = COS(     30)
+61 PRINT COS(     30)
