@@ -58,14 +58,17 @@ parametry_n('') --> odstep.
 
 %Typ
 typ('int')--> "Integer".
-typ('bool') --> "Boolean".
+typ('bool')--> "Boolean".
+typ('double')--> "Double".
+typ('char')--> "Char".
+
 
 %Definicja
 list_def(LD) --> definition(D), "\n",list_def(LD1), {concat_atom([D,'\n',LD1],LD)}.
 list_def(LD) --> definition(D), {concat_atom([D],LD)}.
 definition(D) --> "Dim", odstep, wyraz(W), odstep, "As", odstep, typ(T), {concat_atom([T,' ',W,';'],D),komentarz(D)}.
 
-%Bia³e znaki.
+%BiaÂ³e znaki.
 ws --> " ", ws.
 ws --> "\t", ws.
 ws --> "\n", ws.
@@ -73,7 +76,7 @@ ws --> "".
 odstep --> " ", odstep.
 odstep --> "\t", odstep.
 odstep --> "".
-odstep_k --> " ", odstep_k.   %odstêp konieczny
+odstep_k --> " ", odstep_k.   %odstÃªp konieczny
 odstep_k --> "\t", odstep_k.
 odstep_k --> " ".
 odstep_k --> "\t".
@@ -81,7 +84,7 @@ nowa_linia --> "\n", nowa_linia.
 nowa_linia --> "".
 przynajmniej1nl --> ws, "\n", ws.
 
-%liczby ca³kowite
+%liczby caÂ³kowite
 liczba(I) --> liczba_i(I), {!}.
 liczba_i(I) --> zmiennap(I).
 liczba_i(I) --> calkowita(I).
@@ -91,7 +94,7 @@ cyfra(I) --> [I1], {code_type(I1, digit), atom_codes(I, [I1])}.
 %liczby zmiennoprzecinkowe
 zmiennap(I) --> calkowita(I1), ".", calkowita(Rest), {concat_atom([I1,'.',Rest], I)}.
 
-%ci¹gi znaków
+%ciÂ¹gi znakÃ³w
 %string(C) --> chars(C1), odstep, string(C2), {concat_atom([C1,C2],C)}.
 string(C) --> chars(C).
 
@@ -108,12 +111,12 @@ wyraz_(W) --> znak_alfanum(Z), {concat_atom([Z],W)}.
 znak_alfanum(Z) --> [Znak], {code_type(Znak, alnum), atom_codes(Z, [Znak])}.
 znak_bialy(Z) :- code_type(Znak, white), atom_codes(Z, [Znak]).
 
-%ciagi znakow z bia³ymi znakami
-tekst(T) --> znak_niebia³y(Z), tekst_(T2), {concat_atom([Z,T2],T), concat_atom(['tekst: {',T,'}\n'],X)}.%, komentarz(X)}.
+%ciagi znakow z biaÂ³ymi znakami
+tekst(T) --> znak_niebiaÂ³y(Z), tekst_(T2), {concat_atom([Z,T2],T), concat_atom(['tekst: {',T,'}\n'],X)}.%, komentarz(X)}.
 tekst_(T) --> znak(Z), tekst_(T2), {concat_atom([Z,T2],T)}.
-tekst_(T) --> znak_niebia³y(Z), {concat_atom([Z],T)}.
+tekst_(T) --> znak_niebiaÂ³y(Z), {concat_atom([Z],T)}.
 znak(Z) --> [Znak], {atom_codes(Z, [Znak])}.
-znak_niebia³y(Z) --> [Znak], {not(code_type(Znak, space)), atom_codes(Z, [Znak])}.
+znak_niebiaÂ³y(Z) --> [Znak], {not(code_type(Znak, space)), atom_codes(Z, [Znak])}.
 
 %Drukowanie
 cout(C) --> "Console.Write(\"",{komentarz('!')},string(S),"\")", {concat_atom(['cout<<\"',S,'\";\n'],C),komentarz(S)}.
@@ -122,5 +125,5 @@ cout(C) --> "Console.WriteLine(\"",{komentarz('!')},string(S),"\")", {komentarz(
 
 %tekst_do(T,Do) --> znak(Z), tekst_do(T2,Do), {concat_atom([Z,T2],T)}.
 
-%print by móc wy³¹czaæ drukowanie
+%print by mÃ³c wyÂ³Â¹czaÃ¦ drukowanie
 komentarz(K) :- print(K).
