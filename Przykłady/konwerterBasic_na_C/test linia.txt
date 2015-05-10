@@ -1,0 +1,6 @@
+linia (pierwsza) ze znakiami
+linia druga + [inne] znaki $#-
+
+	->linia trzecia {po dostepie}
+
+linia czwarta, a po niej  enter
