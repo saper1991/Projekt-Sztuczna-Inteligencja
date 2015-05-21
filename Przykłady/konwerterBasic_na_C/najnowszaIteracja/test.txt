@@ -1,0 +1,78 @@
+Module Module1
+
+    Sub Main()
+        Dim liczby(9) As Integer
+        Dim random As Integer
+
+        Randomize()
+
+		If tak(2)=1 Then Console.WriteLine("2=1") Else Console.WriteLine("2<>1")
+        Console.WriteLine("Uporz¹dk\"owator")
+        Console.WriteLine("")
+        Console.WriteLine("Podaj proszê 10 liczb:")
+        For i = 0 To 9
+            Console.Write(i + 1 & ": ")
+            random = Rnd() * 100
+            Console.WriteLine(random)
+            liczby(i) = random
+        Next i
+
+        wyswietl(liczby)
+        sortuj(liczby)
+        wyswietl(liczby)
+
+
+        Console.ReadLine()
+
+    End Sub
+
+    Sub wyswietl(ByVal tablica As Array)
+        Dim n As Integer
+        n = tablica.Length
+
+        Console.WriteLine("Tablica ma " & n & " elementów")
+        For i = 0 To 9
+            Console.Write(tablica(i) & vbTab)
+        Next i
+        Console.Write(vbNewLine)
+    End Sub
+
+    Function sortuj(ByVal tablica As Array) As Array
+        Dim n As Integer, p As Integer
+        n = tablica.Length
+		
+		                If 2 > 3 
+                    'Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
+                    p = tablica(j)
+                    tablica(j) = tablica(j + 1)
+                    tablica(j + 1) = p
+                    'wyswietl(tablica)
+                End If
+		
+        For i = 0 To n - 2
+            For j = 0 To n - 2 - i
+                If tablica(j) > tablica(j + 1) Then
+                    'Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
+                    p = tablica(j)
+					Exit For
+                    tablica(j) = tablica(j + 1)
+                    tablica(j + 1) = p
+                    'wyswietl(tablica)
+				ElseIf tablica(j) = tablica(j + 1) Then
+				Console.WriteLine("s¹ równe")
+				Else
+				Console.WriteLine("Jest mniejsze")
+                End If
+					Exit For
+            Next j
+        Next i
+		a=4 +5
+		x =4+   i
+		a = r
+		e= 6-i+7*u/4+5
+		e= 6-i+(7*u)/4+5
+        Return tablica
+    End Function
+
+
+End Module

@@ -1,0 +1,82 @@
+#include <stdio.h>
+using namespace std;
+
+
+void Main()
+{
+	int liczby[9];
+	int random;
+
+	srand(time(0));
+	if (tak(2) == 1) cout<<"2=1"<<endl; else cout<<"2<>1"<<endl;
+	cout<<"Uporz¹dk\"owator"<<endl;
+	cout<<""<<endl;
+	cout<<"Podaj proszê 10 liczb:"<<endl;
+	for(i=0; i<=9; i=i+1)
+	{
+		cout<<i+1<<": ";
+		random = (rand()/RAND_MAX)*100;
+		cout<<random<<endl;
+		liczby[i] = random;
+	}
+	wyswietl(liczby);
+	sortuj(liczby);
+	wyswietl(liczby);
+	Console.ReadLine()
+}
+
+void wyswietl(ByVal tablica As Array )
+{
+	int n;
+
+	n = (sizeof tablica / sizeof *tablica);
+	cout<<"Tablica ma "<<n<<" elementów"<<endl;
+	for(i=0; i<=9; i=i+1)
+	{
+		cout<<tablica(i)<<vbTab;
+	}
+	cout<<vbNewLine;
+}
+
+Array sortuj(ByVal tablica As Array )
+{
+	int n;
+	int p;
+
+	n = (sizeof tablica / sizeof *tablica);
+	if (2 > 3)
+	{
+		//Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
+		p = tablica(j);
+		tablica[j] = tablica(j+1);
+		tablica[j+1] = p;
+		//wyswietl(tablica)
+	}
+	for(i=0; i<=n-2; i=i+1)
+	{
+		for(j=0; j<=n-2-i; j=j+1)
+		{
+			if (tablica(j) > tablica(j+1))
+			{
+				//Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
+				p = tablica(j);
+				break;				tablica[j] = tablica(j+1);
+				tablica[j+1] = p;
+				//wyswietl(tablica)
+			}else if (tablica(j) == tablica(j+1))
+			{
+				cout<<"s¹ równe"<<endl;
+			}else
+			{
+				cout<<"Jest mniejsze"<<endl;
+			}
+			break;
+		}
+	}
+	a = 4+5;
+	x = 4+i;
+	a = r;
+	e = 6-i+7*u/4+5;
+	e = 6-i+(7*u)/4+5;
+	return tablica;
+}
