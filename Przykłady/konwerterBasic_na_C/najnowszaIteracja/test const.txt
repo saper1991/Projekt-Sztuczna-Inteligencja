@@ -1,0 +1,5 @@
+Const y    As Integer = 5,     x = True
+Const z= 5, a =4.5
+
+Const s = 		"a"
+Const dd = 4, aa As Integer=3

@@ -1,5 +1,8 @@
 Module Module1
 
+	Structure klasa
+	
+	End Structure
     Sub Main()
         Dim liczby(9) As Integer
         Dim random As Integer
@@ -26,7 +29,7 @@ Module Module1
 
     End Sub
 
-    Sub wyswietl(ByVal tablica As Array)
+    Sub wyswietl()
         Dim n As Integer
         n = tablica.Length
 
@@ -37,41 +40,8 @@ Module Module1
         Console.Write(vbNewLine)
     End Sub
 
-    Function sortuj(ByVal tablica As Array) As Array
-        Dim n As Integer, p As Integer
-        n = tablica.Length
-		
-		                If 2 > 3 
-                    'Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
-                    p = tablica(j)
-                    tablica(j) = tablica(j + 1)
-                    tablica(j + 1) = p
-                    'wyswietl(tablica)
-                End If
-		
-        For i = 0 To n - 2
-            For j = 0 To n - 2 - i
-                If tablica(j) > tablica(j + 1) Then
-                    'Console.WriteLine("Zamiana " & tablica(j) & " oraz " & tablica(j + 1))
-                    p = tablica(j)
-					Exit For
-                    tablica(j) = tablica(j + 1)
-                    tablica(j + 1) = p
-                    'wyswietl(tablica)
-				ElseIf tablica(j) = tablica(j + 1) Then
-				Console.WriteLine("s¹ równe")
-				Else
-				Console.WriteLine("Jest mniejsze")
-                End If
-					Exit For
-            Next j
-        Next i
-		a=4 +5
-		x =4+   i
-		a = r
-		e= 6-i+7*u/4+5
-		e= 6-i+(7*u)/4+5
-        Return tablica
+    Function sortuj() As Array
+
     End Function
 
 
