@@ -292,7 +292,9 @@ char('') --> "\"", {!,fail}.
 char(C) --> [C1], {code_type(C1, alnum), atom_codes(C, [C1])}.
 char(C) --> [C1], {code_type(C1, punct), atom_codes(C, [C1])}.
 char(C) --> [C1], {code_type(C1, space), not(code_type(C1, newline)), atom_codes(C, [C1])}.
+char('-') --> "-".
 char('.') --> ".".
+
 
 wyraz(W) --> wyraz_(W), {concat_atom(['wyraz: ',W,'\n'],X), info(X)}.
 wyraz_(W) --> znak_alfanum(Z), wyraz_(W2), {concat_atom([Z,W2],W)}.
