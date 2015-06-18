@@ -1,4 +1,58 @@
 Module Module1
+<<<<<<< HEAD
+	Sub Main()
+    	Dim liczby(9) As Integer
+    	Dim random As Integer
+    	Dim g, b, d As Integer, a1, a2, a3 As Double, odp1, odp2 As Boolean
+    	Randomize()
+
+    	'Komentarz nr 1
+    	a2 = 45.32
+    	a3 = (a2 + 34 ) * ((23 / a2)-34.245)
+    	If a3 <> 27 Then
+    	Console.WriteLine("Error "&"number"&"27")
+    	End If
+    	Console.WriteLine("Podaj proszê 10 liczb:")
+    	For i = 0 To 9
+        	Console.Write(i + 1 & ": ")
+        	random = Rnd() * 100
+        	If random = 12 Then
+            	If odp1 = False Then
+                	Console.WriteLine("Prawda " & " odp" & "1")
+
+            	Else
+                	Console.WriteLine("Fa³sz " & "odp" + "2")
+
+            	End If
+            	Continue For
+        	ElseIf random = 54 Then
+            	Exit For
+        	End If
+         	 
+        	Console.WriteLine(random)
+        	liczby(i) = random
+    	Next i
+
+    	wyswietl()
+
+    	///Komentarz nr2
+    	Console.ReadLine()
+
+	End Sub
+	Function wyswietl(ByVal j As Integer) As Double
+    	Dim n As Integer
+		Dim tablica(3)
+    	n = tablica.Length
+    	Console.WriteLine("Tablica ma " & n & " elementów")
+    	For i = 0 To 9
+        	Console.Write(j)
+    	Next i
+    	Console.Write(Zmienna.")
+		Return j
+	End Function
+
+ 
+=======
 
 	Structure klasa
 	
@@ -45,4 +99,5 @@ Module Module1
     End Function
 
 
+>>>>>>> origin/master
 End Module

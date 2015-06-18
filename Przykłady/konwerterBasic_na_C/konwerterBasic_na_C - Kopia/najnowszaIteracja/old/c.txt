@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+
+void void()
+{
+	TablicaCiagow = New Integer(5) {}
+	TablicaCiagow[0] = 1;
+	Console.ReadKey()
+}
+
+Integer funkcja()
+{
+	return 1;
+}

@@ -1,0 +1,3 @@
+Dim xaa = 6, a = "r", b = True, c As Boolean, x = 8.6, y As Double = 4.76, i As Integer
+Dim ela, piotrek, gienek As Boolean, w, v As Double, j As Integer = 15
+Dim vvv=5.5, www, ttt As Boolean

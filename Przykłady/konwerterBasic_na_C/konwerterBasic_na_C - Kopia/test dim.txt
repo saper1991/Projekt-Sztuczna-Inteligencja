@@ -1,0 +1,4 @@
+Dim a, b, c As Boolean, x,y As Double, i As Integer
+
+
+Dim ela, piotrek,gienek As Boolean, w, v As Double, j As Integer

@@ -1,0 +1,16 @@
+For i=0 To 9
+instrukcja 1
+Console.WriteLine("Double")
+Console.Write("Text")
+Console.Write("Test")
+Next i
+
+For j=8 To 10
+Dim a, b, c As Boolean, x,y As Double, i As Integer
+instrukcja 3
+instrukcja 4
+For x=8 To 10
+instrukcja 5
+instrukcja 6
+Next x
+Next j

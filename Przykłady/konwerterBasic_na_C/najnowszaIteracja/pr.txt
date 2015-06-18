@@ -1,0 +1,45 @@
+Module Module1
+
+    Sub Main()
+        Dim a, b, c As Integer
+        Console.Write("a = ")
+	a = Console.ReadLine()
+        Console.Write("b = ")
+	b = Console.ReadLine()
+        Console.Write("c = ")
+	c = Console.ReadLine()
+
+        oblicz(a, b, c)
+        Console.ReadKey()
+    End Sub
+
+    Sub oblicz(ByVal a As Integer, ByVal b As Integer, ByVal c As Integer)
+        Dim del As Double
+        del = delta(a, b, c)
+        Console.WriteLine("Delta = " & del)
+        If del < 0 Then
+            Console.WriteLine("Brak rozwiazan")
+        ElseIf del = 0 Then
+            Console.WriteLine("Jedno rozwiazanie")
+            Dim r As Double
+            r = (-1 * b) / (2 * a)
+            Console.WriteLine("x = " & r)
+        ElseIf del > 0 Then
+            Console.WriteLine("Dwa rozwiazania")
+            Dim r1, r2 As Double
+            r1 = (-1 * b - del ^ (0.5)) / (2 * a)
+            r2 = (-1 * b + del ^ (0.5)) / (2 * a)
+            Console.WriteLine("x1 = " & r1)
+            Console.WriteLine("x2 = " & r2)
+        End If
+
+    End Sub
+
+    Function delta(ByVal a As Integer, ByVal b As Integer, ByVal c As Integer) As Double
+        Dim d As Double
+        d = (b * b) - (4 * a * c)
+        Return d
+
+    End Function
+
+End Module

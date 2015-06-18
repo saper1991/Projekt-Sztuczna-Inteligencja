@@ -1,5 +1,15 @@
+#include "stdafx.h"
 #include <stdio.h>
 #include <iostream>
+<<<<<<< HEAD
+#include <math.h>
+using namespace std;
+
+void Main();
+void oblicz(int a, int b, int c);
+double delta(int a, int b, int c);
+
+=======
 using namespace std;
 
 struct klasa;
@@ -11,43 +21,63 @@ Array sortuj();
 struct klasa
 {
 }
+>>>>>>> origin/master
 
 void Main()
 {
-	int liczby[9];
-	int random;
+	int a, b, c;
 
-	srand(time(0));
-	if (tak(2) == 1) cout<<"2=1"<<endl; else cout<<"2<>1"<<endl;
-	cout<<"Uporz¹dk\"owator"<<endl;
-	cout<<""<<endl;
-	cout<<"Podaj proszê 10 liczb:"<<endl;
-	for(i=0; i<=9; i=i+1)
-	{
-		cout<<i+1<<": ";
-		random = (rand()/RAND_MAX)*100;
-		cout<<random<<endl;
-		liczby[i] = random;
-	}
-	wyswietl(liczby);
-	sortuj(liczby);
-	wyswietl(liczby);
-	Console.ReadLine()
+	cout<<"a = ";
+	cin>>a;
+	cout<<"b = ";
+	cin>>b;
+	cout<<"c = ";
+	cin>>c;
+	oblicz(a, b, c);
+	system("pause");
 }
 
+<<<<<<< HEAD
+void oblicz(int a, int b, int c)
+=======
 void wyswietl()
+>>>>>>> origin/master
 {
-	int n;
+	double del;
 
-	n = (sizeof tablica / sizeof *tablica);
-	cout<<"Tablica ma "<<n<<" elementów"<<endl;
-	for(i=0; i<=9; i=i+1)
+	del = delta(a, b, c);
+	cout<<"Delta = "<<del<<endl;
+	if (del < 0)
 	{
-		cout<<tablica(i)<<vbTab;
+		cout<<"Brak rozwiazan"<<endl;
+	}else if (del == 0)
+	{
+		cout<<"Jedno rozwiazanie"<<endl;
+		double r;
+
+		r = (-1*b)/(2*a);
+		cout<<"x = "<<r<<endl;
+	}else if (del > 0)
+	{
+		cout<<"Dwa rozwiazania"<<endl;
+		double r1, r2;
+
+		r1 = (-1*b-pow(del,(0.5)))/(2*a);
+		r2 = (-1*b+pow(del,(0.5)))/(2*a);
+		cout<<"x1 = "<<r1<<endl;
+		cout<<"x2 = "<<r2<<endl;
 	}
-	cout<<vbNewLine;
 }
 
+<<<<<<< HEAD
+double delta(int a, int b, int c)
+{
+	double d;
+
+	d = (b*b)-(4*a*c);
+	return d;
+=======
 Array sortuj()
 {
+>>>>>>> origin/master
 }
