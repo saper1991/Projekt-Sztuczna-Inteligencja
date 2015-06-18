@@ -232,9 +232,11 @@ operator('%') --> "Mod".
 elem_wyr(EW) --> "(", odstep, wyrazenie(Wyr), odstep, ")", {concat_atom(['(',Wyr,')'],EW)}.
 elem_wyr(EW) --> nazwa(Nazwa),".Length", {concat_atom(['(sizeof ',Nazwa,' / sizeof *',Nazwa,')'],EW)}.
 elem_wyr(EW) --> "Rnd()", {concat_atom(['(rand()/RAND_MAX)'],EW)}.
+elem_wyr(EW) --> wartosc_bool(EW).
 elem_wyr(EW) --> wywolanie_funkcji(EW).
 elem_wyr(EW) --> nazwa(EW).
 elem_wyr(EW) --> liczba(EW).
+
 wywolanie_funkcji(WF) --> nazwa(Nazwa),"(",lista_wyrazen(LW),")", {concat_atom([Nazwa,'(',LW,')'],WF)}.
 
 %Biale znaki.
